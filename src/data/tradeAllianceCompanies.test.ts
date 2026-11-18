@@ -11,8 +11,8 @@ describe("Trade Alliance directory", () => {
       expect(url.pathname.startsWith("/__l5e/assets-v1/")).toBe(true);
     }
   });
-  it("lists 14 current companies", () => {
-    expect(allianceCompanies).toHaveLength(14);
+  it("lists 15 current companies", () => {
+    expect(allianceCompanies).toHaveLength(15);
   });
   it.each(["riverside-roofing", "ak-electric"])("excludes former partner %s", id => {
     expect(allianceCompanies.some(company => company.id === id)).toBe(false);
@@ -28,7 +28,7 @@ describe("Trade Alliance directory", () => {
     expect(allianceCompanies.find(company => company.id === "sound-gutters")?.trade).toBe("Roofing & Gutters");
   });
   it("sorts companies alphabetically", () => {
-    expect(allianceCompanies.map(company => company.name)).toEqual(["Asbestos Removal of Puget Sound", "Benjamins Drywall Inc", "Do It Right Roofing", "HB Power Electric", "Hello Electric", "Hero Plumbing LLC", "Perdue Builders", "PNW Drywall Finishing & Painting", "Rock Roofing", "Sound Gutters & Roofing Co", "Squatch Roofing", "Three Tree Roofing", "West Coast Wallcovering", "Zee Construction"]);
+    expect(allianceCompanies.map(company => company.name)).toEqual(["Asbestos Removal of Puget Sound", "Benjamins Drywall Inc", "Do It Right Roofing", "HB Power Electric", "Hello Electric", "Hero Plumbing LLC", "Perdue Builders", "PNW Drywall Finishing & Painting", "Rock Roofing", "Sound Gutters & Roofing Co", "Squatch Roofing", "Studebaker Installs LLC", "Three Tree Roofing", "West Coast Wallcovering", "Zee Construction"]);
   });
   it("provides all 26 letters and selects the first matching company", () => {
     expect(directoryLetters.join("")).toBe("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
@@ -48,8 +48,8 @@ describe("Trade Alliance directory", () => {
     expect(hasCompleteCompanyData({ id: "x", name: "X", trade: "Plumbing", logo: "/l.svg", description: "Plumbing", website: "" })).toBe(true);
     expect(visibleAllianceCompanies.find(company => company.id === "hero-plumbing")?.website).toBe("");
   });
-  it("shows all 14 companies", () => {
-    expect(visibleAllianceCompanies).toHaveLength(14);
+  it("shows all 15 companies", () => {
+    expect(visibleAllianceCompanies).toHaveLength(15);
     expect(allianceCompanies.filter(company => !hasCompleteCompanyData(company))).toEqual([]);
   });
 });
@@ -59,5 +59,11 @@ describe("companyLinkLabel", () => {
     expect(companyLinkLabel("https://www.instagram.com/hbpowerelectric/")).toBe("Visit on Instagram");
     expect(companyLinkLabel("https://www.facebook.com/interiorconstruction99/")).toBe("Visit on Facebook");
     expect(companyLinkLabel("http://www.mandipaintingwa.com/")).toBe("Visit official website");
+  });
+  it("shows Studebaker Installs LLC without a logo, linking to its L&I license", () => {
+    const c = visibleAllianceCompanies.find(company => company.id === "studebaker-installs");
+    expect(c?.logo).toBeUndefined();
+    expect(c?.website).toBe("https://secure.lni.wa.gov/verify/Detail.aspx?LIC=STUDEIL746KA");
+    expect(companyLinkLabel(c?.website ?? "")).toBe("View L&I license");
   });
 });

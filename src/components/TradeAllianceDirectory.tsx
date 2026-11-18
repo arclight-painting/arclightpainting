@@ -20,7 +20,7 @@ export default function TradeAllianceDirectory() {
           <AccordionContent className="px-5 pb-6 md:px-6 motion-reduce:transition-none">
             <div className="grid gap-6 border-t border-border pt-6 sm:grid-cols-[180px_minmax(0,1fr)]">
               <div className="flex min-h-28 items-center justify-center rounded-md bg-background p-4">
-                <img src={company.logo} alt={`${company.name} logo`} loading="lazy" className="h-24 w-full max-w-44 object-contain" />
+                {company.logo ? <img src={company.logo} alt={`${company.name} logo`} loading="lazy" className="h-24 w-full max-w-44 object-contain" /> : <span className="text-center text-xl font-bold leading-tight">{company.name}</span>}
               </div>
               <div className="min-w-0"><p className="text-base leading-relaxed text-muted-foreground">{company.description}</p>
                 {company.website && <Button asChild variant="link" className="mt-3 h-auto whitespace-normal px-0 text-accent"><a href={company.website} target="_blank" rel="noopener noreferrer">{companyLinkLabel(company.website)} <ExternalLink className="h-4 w-4" /><span className="sr-only"> for {company.name} (opens in a new tab)</span></a></Button>}

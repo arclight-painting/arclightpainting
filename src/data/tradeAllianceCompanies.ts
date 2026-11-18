@@ -21,6 +21,8 @@ export interface AllianceCompany {
   website?: string;
   logo?: string;
   description?: string;
+  // Approved exception: show the company name where the logo would go.
+  nameInPlaceOfLogo?: boolean;
 }
 
 // List current partners only; never substitute a similarly named business.
@@ -36,6 +38,8 @@ const companies: AllianceCompany[] = [
   { id: "three-tree-roofing", name: "Three Tree Roofing", trade: "Roofing", location: "Kent", website: "https://www.threetreeroofing.com/", logo: threeTreeLogo.url, description: "Three Tree Roofing serves the greater Seattle area with roof replacement and installation services for residential and commercial properties." },
   // Logo cropped from a screenshot of the site header (rendered as inline SVG, no downloadable file).
   { id: "west-coast-wallcovering", name: "West Coast Wallcovering", trade: "Wallpaper & Wallcovering", location: "Bothell", website: "https://www.westcoastwallcovering.com/", logo: westCoastLogo.url, description: "West Coast WallCoverings installs wallpaper and wall coverings, including custom murals, dry erase and whiteboard surfaces, and specialty wallpaper." },
+  // Website and description come from the company's Washington L&I contractor license listing; approved to show without a logo.
+  { id: "studebaker-installs", name: "Studebaker Installs LLC", trade: "General Contracting", location: "Seattle", website: "https://secure.lni.wa.gov/verify/Detail.aspx?LIC=STUDEIL746KA", nameInPlaceOfLogo: true, description: "A Seattle-based general construction contractor with an active Washington L&I contractor registration, bonded and insured." },
   { id: "zee-construction", name: "Zee Construction", trade: "General Contracting & Remodeling", website: "https://www.zee-llc.com/", logo: zeeLogo.url, description: "Zee Design & Build offers residential remodeling, renovation, new construction, and commercial construction, with design and project planning from initial concept through completion." },
   { id: "asbestos-removal-puget-sound", name: "Asbestos Removal of Puget Sound", trade: "Asbestos Abatement", location: "Everett", website: "https://asbestosremovalofpugetsound.com/", logo: asbestosLogo.url, description: "A licensed, AHERA-certified asbestos testing and removal company that also tests for lead. Uses full containment and HEPA disposal across Snohomish, King and Pierce Counties." },
   { id: "benjamins-drywall", name: "Benjamins Drywall Inc", trade: "Drywall", location: "Snohomish", website: "https://www.facebook.com/interiorconstruction99/", logo: benjaminsLogo.url, description: "An established drywall contractor based in Snohomish, WA." },
@@ -48,7 +52,7 @@ export const allianceCompanies = companies.map(company => ({
   ...company,
   logo: company.logo ? new URL(company.logo, "https://arclightpainting.lovable.app").href : company.logo,
 })).sort((a, b) => a.name.localeCompare(b.name, "en", { sensitivity: "base" }));
-export const hasCompleteCompanyData = (company: AllianceCompany) => Boolean(company.logo?.trim() && company.description?.trim()) // website optional; the link is hidden when absent;
+export const hasCompleteCompanyData = (company: AllianceCompany) => Boolean((company.logo?.trim() || company.nameInPlaceOfLogo) && company.description?.trim()) // website optional; the link is hidden when absent;
 export const visibleAllianceCompanies = allianceCompanies.filter(hasCompleteCompanyData);
 export const directoryLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 export const firstCompanyForLetter = (letter: string) => visibleAllianceCompanies.find(company => company.name[0]?.toUpperCase() === letter.toUpperCase());
@@ -57,6 +61,7 @@ export const companyLinkLabel = (website: string) => {
     const host = new URL(website).hostname.toLowerCase().replace(/^www\./, "");
     if (host === "instagram.com" || host.endsWith(".instagram.com")) return "Visit on Instagram";
     if (host === "facebook.com" || host.endsWith(".facebook.com")) return "Visit on Facebook";
+    if (host === "secure.lni.wa.gov") return "View L&I license";
   } catch { /* fall through */ }
   return "Visit official website";
 };
