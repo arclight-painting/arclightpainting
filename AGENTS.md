@@ -1,4 +1,5 @@
 # Project rules
+- Keep accredited realtor records in the Realtor Referral data module and resolve hosted logo pointers against the published Lovable origin so logos also load on the custom domain.
 - Gate Trade Alliance through `src/lib/tradeAlliancePreview.ts` and the existing NotFound page so its launch flag and hostname rules stay independently testable without altering SEO discovery.
 - Keep the Trade Alliance company directory in a dedicated data module and renderer; verified official assets and links stay separate from layout, and unverified company details must never be guessed; a website is optional (link hidden), logo (or an approved name-in-place flag) and description are required to show.
 - Resolve Trade Alliance logo asset pointers against the published Lovable asset origin because Cloudflare Pages cannot serve the relative asset endpoint; SEO audits exempt only those published image sources, not page links or metadata.

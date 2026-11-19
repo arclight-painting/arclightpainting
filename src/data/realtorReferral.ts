@@ -1,4 +1,11 @@
 import type { FAQItem } from "@/data/faqData";
+import madricLogo from "@/assets/realtors/madric-real-estate.webp.asset.json";
+import realogicsLogo from "@/assets/realtors/realogics-sothebys.webp.asset.json";
+
+export const accreditedRealtors = [
+  { name: "MADRIC Real Estate", website: "https://www.madricre.com/", logo: new URL(madricLogo.url, "https://arclightpainting.lovable.app").href },
+  { name: "Realogics Sotheby's Int'l Rlty", website: "https://www.rsir.com/", logo: new URL(realogicsLogo.url, "https://arclightpainting.lovable.app").href },
+];
 
 export const realtorReferralSeo = {
   title: "Realtor Referral Program | Arclight Painting",

@@ -13,7 +13,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import heroPhoto from "@/assets/interior-painting-entryway-staircase-bothell.webp";
-import { clientTypes, highlightBand, projectTypes, realtorReferralFAQ, realtorReferralHero, realtorReferralSeo, referralSteps, referralThankYou, supportCards, timelines } from "@/data/realtorReferral";
+import { accreditedRealtors, clientTypes, highlightBand, projectTypes, realtorReferralFAQ, realtorReferralHero, realtorReferralSeo, referralSteps, referralThankYou, supportCards, timelines } from "@/data/realtorReferral";
 import { referralSchema, submitReferral, type ReferralValues } from "@/lib/realtorReferralForm";
 
 const cardIcons = [KeyRound, Building2, Home];
@@ -151,6 +151,20 @@ export default function RealtorReferral() {
         <div className="container mx-auto max-w-3xl px-4">
           <h2 className="mb-8 text-center text-3xl md:text-4xl font-bold">Refer a <span className="text-accent">Client</span></h2>
           <div className="relative rounded-lg border border-border bg-card p-6 md:p-10"><ReferralForm /></div>
+        </div>
+      </section>
+
+      <section aria-labelledby="accredited-realtors-heading" className="py-16">
+        <div className="container mx-auto max-w-5xl px-4">
+          <h2 id="accredited-realtors-heading" className="mb-12 text-center text-3xl md:text-4xl font-bold">Accredited <span className="text-accent">Realtors</span></h2>
+          <div className="grid gap-10 sm:grid-cols-2">
+            {accreditedRealtors.map(realtor => <article key={realtor.website} className="min-w-0 text-center">
+              <div className="mb-6 flex h-40 items-center justify-center">
+                <img src={realtor.logo} alt={`${realtor.name} logo`} loading="lazy" className="max-h-full w-auto max-w-full object-contain" />
+              </div>
+              <a href={realtor.website} target="_blank" rel="noopener noreferrer" className="text-xl font-bold text-accent underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">{realtor.name}<span className="sr-only"> (opens in a new tab)</span></a>
+            </article>)}
+          </div>
         </div>
       </section>
 
