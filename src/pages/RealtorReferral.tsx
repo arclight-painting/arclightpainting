@@ -1,104 +1,44 @@
-import { useState } from "react";
-import { useForm, Controller } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { ArrowRight, Building2, CheckCircle2, Gift, Home, KeyRound, Phone } from "lucide-react";
+import { useEffect } from "react";
+import { ArrowRight, Building2, Gift, Home, KeyRound, Phone } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead, { faqPageSchema } from "@/components/SEOHead";
 import FAQSection from "@/components/FAQSection";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import heroPhoto from "@/assets/interior-painting-entryway-staircase-bothell.webp";
-import { accreditedRealtors, clientTypes, highlightBand, projectTypes, realtorReferralFAQ, realtorReferralHero, realtorReferralSeo, referralSteps, referralThankYou, supportCards, timelines } from "@/data/realtorReferral";
-import { referralSchema, submitReferral, type ReferralValues } from "@/lib/realtorReferralForm";
+import { accreditedRealtors, highlightBand, realtorReferralFAQ, realtorReferralHero, realtorReferralSeo, referralSteps, supportCards } from "@/data/realtorReferral";
 
 const cardIcons = [KeyRound, Building2, Home];
 const scrollToForm = () => document.getElementById("refer")?.scrollIntoView({ behavior: "smooth", block: "start" });
 
-const defaults: Partial<ReferralValues> = { realtorFirstName: "", realtorLastName: "", brokerage: "", realtorPhone: "", realtorEmail: "", licenseNumber: "", clientName: "", clientPhone: "", clientEmail: "", propertyAddress: "", city: "", zip: "", projectTypes: [], timeline: "", keyDate: "", notes: "", includeVoucher: false, website: "" };
-
 function ReferralForm() {
-  const { register, control, handleSubmit, formState: { errors, isSubmitting } } = useForm<ReferralValues>({ resolver: zodResolver(referralSchema), defaultValues: defaults as ReferralValues, shouldFocusError: true });
-  const [status, setStatus] = useState<"idle" | "done" | "not-configured" | "failed">("idle");
-  const onSubmit = async (values: ReferralValues) => {
-    const result = await submitReferral(values);
-    setStatus("reason" in result ? result.reason : "done");
-  };
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://link.arclightpainting.com/js/form_embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => { script.remove(); };
+  }, []);
 
-  if (status === "done") return <div role="status" className="py-8 text-center"><CheckCircle2 className="mx-auto mb-4 h-12 w-12 text-accent" /><p className="text-xl font-semibold">{referralThankYou}</p></div>;
-
-  const err = (name: keyof ReferralValues) => errors[name]?.message ? <p id={`rr-${name}-error`} role="alert" className="mt-1 text-sm text-destructive">{String(errors[name]?.message)}</p> : null;
-  const aria = (name: keyof ReferralValues) => ({ "aria-invalid": !!errors[name], "aria-describedby": errors[name] ? `rr-${name}-error` : undefined });
-  const text = (name: keyof ReferralValues, label: string, opts: { required?: boolean; type?: string; autoComplete?: string; wide?: boolean } = {}) => <div className={opts.wide ? "sm:col-span-2" : undefined}>
-    <Label htmlFor={`rr-${name}`}>{label} {opts.required ? <span className="text-accent">*</span> : <span className="font-normal text-muted-foreground">(optional)</span>}</Label>
-    <Input id={`rr-${name}`} type={opts.type ?? "text"} autoComplete={opts.autoComplete} className="mt-2" {...aria(name)} {...register(name)} />
-    {err(name)}
-  </div>;
-
-  return <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-10">
-    <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden"><label htmlFor="rr-website">Website</label><input id="rr-website" tabIndex={-1} autoComplete="off" {...register("website")} /></div>
-
-    <fieldset>
-      <legend className="mb-5 text-2xl font-bold">Your Details <span className="text-accent">(Realtor)</span></legend>
-      <div className="grid gap-5 sm:grid-cols-2">
-        {text("realtorFirstName", "First name", { required: true, autoComplete: "given-name" })}
-        {text("realtorLastName", "Last name", { required: true, autoComplete: "family-name" })}
-        {text("brokerage", "Brokerage / Company", { required: true, autoComplete: "organization", wide: true })}
-        {text("realtorPhone", "Phone", { required: true, type: "tel", autoComplete: "tel" })}
-        {text("realtorEmail", "Email", { required: true, type: "email", autoComplete: "email" })}
-        {text("licenseNumber", "License #")}
-      </div>
-    </fieldset>
-
-    <fieldset>
-      <legend className="mb-5 text-2xl font-bold">Client &amp; <span className="text-accent">Project Details</span></legend>
-      <div className="grid gap-5 sm:grid-cols-2">
-        {text("clientName", "Client full name", { required: true, wide: true })}
-        {text("clientPhone", "Client phone", { required: true, type: "tel" })}
-        {text("clientEmail", "Client email", { type: "email" })}
-        {text("propertyAddress", "Property address", { required: true, wide: true })}
-        {text("city", "City", { required: true })}
-        {text("zip", "ZIP", { type: "text" })}
-        <div className="sm:col-span-2">
-          <Label htmlFor="rr-clientType">Client type <span className="text-accent">*</span></Label>
-          <Controller control={control} name="clientType" render={({ field }) => <Select value={field.value ?? ""} onValueChange={field.onChange}><SelectTrigger id="rr-clientType" className="mt-2" {...aria("clientType")}><SelectValue placeholder="Select client type" /></SelectTrigger><SelectContent>{clientTypes.map(t => <SelectItem key={t} value={t}>{t}</SelectItem>)}</SelectContent></Select>} />
-          {err("clientType")}
-        </div>
-        <fieldset className="sm:col-span-2" {...aria("projectTypes")}>
-          <legend className="text-sm font-medium">Project type <span className="text-accent">*</span></legend>
-          <Controller control={control} name="projectTypes" render={({ field }) => <div className="mt-3 grid gap-3 sm:grid-cols-2">{projectTypes.map(t => {
-            const checked = field.value?.includes(t) ?? false;
-            return <div key={t} className="flex items-center gap-3"><Checkbox id={`rr-pt-${t}`} checked={checked} onCheckedChange={v => field.onChange(v === true ? [...(field.value ?? []), t] : (field.value ?? []).filter(x => x !== t))} /><Label htmlFor={`rr-pt-${t}`} className="font-normal">{t}</Label></div>;
-          })}</div>} />
-          {err("projectTypes")}
-        </fieldset>
-        <div>
-          <Label htmlFor="rr-timeline">Desired timeline <span className="font-normal text-muted-foreground">(optional)</span></Label>
-          <Controller control={control} name="timeline" render={({ field }) => <Select value={field.value || ""} onValueChange={field.onChange}><SelectTrigger id="rr-timeline" className="mt-2"><SelectValue placeholder="Select a timeline" /></SelectTrigger><SelectContent>{timelines.map(t => <SelectItem key={t} value={t}>{t}</SelectItem>)}</SelectContent></Select>} />
-        </div>
-        {text("keyDate", "Closing or listing date", { type: "date" })}
-        <div className="sm:col-span-2">
-          <Label htmlFor="rr-notes">Project notes <span className="font-normal text-muted-foreground">(optional)</span></Label>
-          <Textarea id="rr-notes" rows={4} maxLength={2000} className="mt-2" {...register("notes")} />
-        </div>
-      </div>
-    </fieldset>
-
-    <div className="space-y-4">
-      <Controller control={control} name="clientConsent" render={({ field }) => <div className="flex items-start gap-3"><Checkbox id="rr-clientConsent" checked={field.value === true} onCheckedChange={v => field.onChange(v === true)} {...aria("clientConsent")} /><Label htmlFor="rr-clientConsent" className="-mt-0.5 leading-relaxed">My client has agreed to be contacted by Arclight Painting about this project. <span className="text-accent">*</span></Label></div>} />
-      {err("clientConsent")}
-      <Controller control={control} name="includeVoucher" render={({ field }) => <div className="flex items-start gap-3"><Checkbox id="rr-includeVoucher" checked={field.value} onCheckedChange={v => field.onChange(v === true)} /><Label htmlFor="rr-includeVoucher" className="-mt-0.5 font-normal leading-relaxed">Include a FREE Painter-For-A-Day voucher for this client.</Label></div>} />
-    </div>
-
-    {status === "not-configured" && <p role="alert" className="rounded-md border border-destructive/40 bg-destructive/5 p-4 text-sm">Online referrals aren't connected yet, so this referral was not sent. Please call us at <a href="tel:14257571199" className="font-semibold text-accent underline">425-757-1199</a>.</p>}
-    {status === "failed" && <p role="alert" className="rounded-md border border-destructive/40 bg-destructive/5 p-4 text-sm">Something went wrong sending your referral. Please try again or call <a href="tel:14257571199" className="font-semibold text-accent underline">425-757-1199</a>.</p>}
-
-    <Button type="submit" size="lg" disabled={isSubmitting} className="w-full gap-2 bg-accent text-accent-foreground hover:bg-accent/90">{isSubmitting ? "Submitting…" : "Submit Referral"} <ArrowRight className="h-4 w-4" /></Button>
-  </form>;
+  return <iframe
+    src="https://link.arclightpainting.com/widget/form/eRHYAtaJQDaKnqWtz9qB"
+    className="block h-[2041px] w-full rounded-lg border-0"
+    id="inline-eRHYAtaJQDaKnqWtz9qB"
+    data-layout="{'id':'INLINE'}"
+    data-trigger-type="alwaysShow"
+    data-trigger-value=""
+    data-activation-type="alwaysActivated"
+    data-activation-value=""
+    data-deactivation-type="neverDeactivate"
+    data-deactivation-value=""
+    data-form-name="Realtor Referral"
+    data-height="2041"
+    data-layout-iframe-id="inline-eRHYAtaJQDaKnqWtz9qB"
+    data-form-id="eRHYAtaJQDaKnqWtz9qB"
+    data-cookie-consent="true"
+    data-cookie-consent-provider="auto"
+    title="Realtor Referral"
+  />;
 }
 
 export default function RealtorReferral() {
@@ -150,7 +90,7 @@ export default function RealtorReferral() {
       <section id="refer" className="scroll-mt-32 bg-secondary py-16">
         <div className="container mx-auto max-w-3xl px-4">
           <h2 className="mb-8 text-center text-3xl md:text-4xl font-bold">Refer a <span className="text-accent">Client</span></h2>
-          <div className="relative rounded-lg border border-border bg-card p-6 md:p-10"><ReferralForm /></div>
+          <ReferralForm />
         </div>
       </section>
 
