@@ -25,6 +25,7 @@ const BlogPostDetail = lazy(() => import("./pages/BlogPostDetail.tsx"));
 const Blog = lazy(() => import("./pages/Blog.tsx"));
 const JoinOurTeam = lazy(() => import("./pages/JoinOurTeam.tsx"));
 const TradeAlliance = lazy(() => import("./pages/TradeAlliance.tsx"));
+const RealtorReferral = lazy(() => import("./pages/RealtorReferral.tsx"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy.tsx"));
 const Eula = lazy(() => import("./pages/Eula.tsx"));
 const Terms = lazy(() => import("./pages/Terms.tsx"));
@@ -84,6 +85,7 @@ const App = () => (
             ))}
             <Route path="/join-our-team" element={<JoinOurTeam />} />
             <Route path="/trade-alliance" element={canRenderTradeAlliance(window.location.hostname) ? <TradeAlliance /> : <NotFound />} />
+            <Route path="/realtor-referral" element={<RealtorReferral />} />
             <Route path="/mission" element={<Mission />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/eula" element={<Eula />} />

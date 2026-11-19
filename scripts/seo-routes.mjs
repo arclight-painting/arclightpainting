@@ -60,6 +60,13 @@ const coreRoutes = [
     changefreq: "monthly",
   },
   {
+    path: "/realtor-referral",
+    title: "Realtor Referral Program | Arclight Painting",
+    description: "Real estate agents: refer your buyers, sellers and landlords to Arclight Painting and give them a FREE Painter-For-A-Day. Submit a referral in under 2 minutes.",
+    priority: "0.6",
+    changefreq: "monthly",
+  },
+  {
     path: "/mission",
     title: "Our Mission - Real Purpose | Arclight Painting",
     description: "At Arclight Painting, service comes first. Learn about our purpose-driven mission, FreshStart™ Touch-Up Plan, and 100% Satisfaction Guarantee.",

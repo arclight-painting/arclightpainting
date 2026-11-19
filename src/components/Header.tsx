@@ -30,6 +30,7 @@ const navItems = [
       { label: "Reviews", href: "/reviews" },
       { label: "Blog", href: "/blog" },
       { label: "Trade Alliance", href: "/trade-alliance" },
+      { label: "Realtor Referral", href: "/realtor-referral" },
       { label: "Join Our Team", href: "/join-our-team" },
     ],
   },
