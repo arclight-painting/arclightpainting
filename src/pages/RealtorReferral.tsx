@@ -26,7 +26,7 @@ function ReferralForm() {
   const [status, setStatus] = useState<"idle" | "done" | "not-configured" | "failed">("idle");
   const onSubmit = async (values: ReferralValues) => {
     const result = await submitReferral(values);
-    setStatus(result.ok ? "done" : result.reason);
+    setStatus("reason" in result ? result.reason : "done");
   };
 
   if (status === "done") return <div role="status" className="py-8 text-center"><CheckCircle2 className="mx-auto mb-4 h-12 w-12 text-accent" /><p className="text-xl font-semibold">{referralThankYou}</p></div>;
