@@ -12,6 +12,186 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "post-thanksgiving-wall-touch-ups-kirkland-wa",
+    title: "After Thanksgiving in Kirkland: How Do You Fix Scuffs, Stains and Dings on Your Walls?",
+    seoTitle: "Post-Thanksgiving Wall Touch-Ups in Kirkland, WA",
+    excerpt: "Guests gone? Here is how Kirkland homeowners can clean scuffs, lift kitchen grease and fix wall dings after Thanksgiving, and when to call a painter.",
+    image: "/images/blog/post-thanksgiving-wall-touch-ups-kirkland-wa.webp",
+    date: "2026-11-19",
+    content: `Thanksgiving is over, the leftovers are in the fridge, and now you notice the walls. There is a black scuff where a suitcase rolled down the hall, a grease haze behind the stove, and a dent where a folding table met the drywall. The good news: most post-holiday wall damage in a Kirkland home can be fixed in a weekend, or in a single day with a pro. Start by cleaning gently, then patch, then touch up with matching paint. If the marks are widespread, the smarter move is to repaint the whole wall.
+
+![Bright Kirkland living room and hallway on a cloudy late-November afternoon, with clean painted walls and a few fresh touch-up spots after the holidays](/images/blog/post-thanksgiving-wall-touch-ups-kirkland-wa.webp)
+
+This guide walks you through each step, so you know what you can handle yourself and when it makes sense to bring in our [interior painting](/services/interior-painting) team.
+
+## Why Walls Take a Beating Over Thanksgiving
+
+A big holiday puts more wear on a house in four days than a normal month does. Here is where the damage usually shows up:
+
+- **Entry and hallways:** Luggage, strollers, wet coats and extra shoes rub against walls and corners.
+- **Dining room:** Extra chairs and folding tables get pushed against the wall, leaving dents and chair-back scuffs.
+- **Kitchen:** Hours of roasting and frying leave a thin film of grease on walls near the stove.
+- **Guest rooms and bathrooms:** Furniture gets moved to fit air mattresses, and steam from extra showers builds up.
+- **Stairways:** Kids, pets and hands sliding along the wall leave fingerprints and smudges.
+
+In the Pacific Northwest, late November is also the start of our long, damp, cloudy stretch. Everyone stays inside, so these marks stay in plain sight all winter. That is why right after Thanksgiving is a good time to deal with them, before the December holidays bring another wave of guests.
+
+## Step 1: Try Cleaning Before You Paint
+
+Paint manufacturers call cleaning the first step for any scuff or mark. A lot of what looks like damage is just dirt sitting on top of the paint.
+
+### Start gentle
+
+Paint makers' care guides recommend a simple routine:
+
+1. **Dust first.** Run your vacuum's dust brush attachment along the wall, or wipe it with a tack cloth.
+2. **Wash with mild soap and warm water.** Use a soft cloth or sponge and light, circular motions.
+3. **Wring out the cloth well.** Too much water can hurt the paint.
+4. **Rinse with a lightly damp rag** to remove any soap left behind.
+
+### Spot-clean stubborn scuffs
+
+For a scuff that will not come off, manufacturer care guides suggest a paste of baking soda and water. Rub it on gently, then wipe the area with a wet rag. For grease near the stove, the same guides suggest a grease-cutting dish soap mixed in warm water.
+
+Always test any cleaner on a hidden spot first, like behind a door or inside a closet.
+
+### Know what your sheen can handle
+
+The sheen (how shiny the paint is) decides how hard you can clean.
+
+| Sheen | How it cleans | Watch out for |
+|---|---|---|
+| **Flat or matte** | Hardest to clean; stains are harder to remove | Hard scrubbing can leave shiny rubbed spots, called burnishing |
+| **Eggshell** | Easy to clean for most rooms | Still go easy with pressure |
+| **Satin** | Better stain resistance and durability than eggshell | Good choice for halls and kitchens |
+| **Semi-gloss** | Very durable and easy to wipe | Best on trim, doors and cabinets |
+
+Paint makers warn that flat paint in high-traffic areas needs caution for exactly this reason. If your hallway is flat paint and it keeps scuffing, that is a sign to switch to eggshell or satin next time it is painted.
+
+### What not to do
+
+- **No harsh chemicals or abrasive scrubbers.** Manufacturers note they can scratch walls or dull the finish.
+- **No washing fresh paint.** If a wall was painted recently, wait at least two weeks before washing it with soap and water, so the finish has time to cure (fully harden).
+- **No soaking the wall.** Heavy pressure and too much water can damage matte paint.
+
+## Step 2: Fix Dents, Dings and Nail Holes
+
+Cleaning will not fix a dent or a hole. Those need a patch before any paint goes on.
+
+### Small dings and nail holes
+
+Holiday decorations, picture rails and that folding table can all leave small holes or dents. Fill them with spackle, let it dry, sand it smooth, and wipe off the dust. Manufacturers note that areas with real drywall damage should be primed before the first coat of paint. If you skip primer on a patch, it often shows through as a dull or blotchy spot.
+
+### Bigger damage
+
+Cracked corners, gouges deeper than a nail hole, or a dent from a doorknob are usually a drywall repair, not a paint job. Our [drywall repair](/services/drywall-repairs) crew handles these so the wall is smooth before we paint. For more on how patching and painting fit together, see our guide on [drywall repair before interior painting](/drywall-repair-before-interior-painting).
+
+### Older homes need extra care
+
+Some Kirkland homes were built before 1978. The EPA says homes built before 1978 are more likely to have lead-based paint, and that sanding and cutting can release lead dust. If your home is that old, do not dry-sand old paint. The EPA recommends hiring a lead-safe certified contractor for repair and painting work in these homes, and following lead-safe practices if you do it yourself.
+
+## Step 3: Touch Up So It Blends In
+
+Touch-ups look easy, but a poor one can stand out more than the scuff did. The most common problem is called flashing: the patched spot looks shinier or duller than the wall around it.
+
+### Match three things
+
+Paint makers list three things your touch-up paint has to match:
+
+- **Color:** Use leftover paint from the original job if it is still in good shape. If not, a paint store can match a small chip of the wall.
+- **Sheen:** A satin patch on an eggshell wall will always show.
+- **Texture:** Use the same tool as the original job. Manufacturer guides say rolled walls get a mini roller and brushed areas get a brush.
+
+### Use a light touch
+
+1. **Use as little paint as possible.** Put on a small amount at a time.
+2. **Start in the middle of the spot** and work outward.
+3. **Feather the edges.** Make the coat lightest at the outer edge so it fades into the old paint.
+4. **Let it dry completely** before deciding if it needs another coat. Check the can for dry time.
+
+Paint makers also note that flat and matte paints are easier to touch up than glossier ones. With satin or semi-gloss, small touch-ups are more likely to flash.
+
+### Label your leftover paint
+
+Paint makers suggest writing the brand, product name, color, sheen and room on every can. It takes one minute and saves a lot of guessing next Thanksgiving.
+
+## When to Repaint the Whole Wall Instead
+
+Sometimes touch-ups will not look right no matter how careful you are. Paint makers suggest repainting the entire wall when touch-ups may not look perfect. Here is a quick way to decide:
+
+| Situation | Best fix |
+|---|---|
+| One or two small scuffs that wash off | Clean only |
+| A few nail holes or small dings | Patch, prime, touch up |
+| Many marks along a hallway | Repaint the wall, corner to corner |
+| Glossy paint with visible patches | Repaint the wall |
+| Old paint, color no longer available | Repaint the wall or room |
+| Grease that keeps coming back in the kitchen | Clean well, then repaint in a more washable sheen |
+
+Repainting corner to corner hides the edges, because there is no patch line for the light to catch.
+
+## How a Painter for a Day Visit Fits After the Holidays
+
+A lot of post-Thanksgiving fixes are small jobs spread across the house: a hallway here, a dining room wall there, a few dings by the stairs. That is exactly what our [Painter for a Day](/services/painter-for-a-day) service is for. You get a painter for a full day to work through your list.
+
+A good post-holiday list might include:
+
+- **Hallway and entry walls** scuffed by luggage and coats
+- **Dining room walls** dented by tables and chairs
+- **Kitchen walls** near the stove that need a fresh, more washable coat
+- **Door frames and trim** with chips and fingerprints
+- **Nail holes** left from holiday decorations
+
+Curious how much fits in one day? Read [what a painter can do in one day](/what-can-a-painter-do-in-one-day-bothell-wa).
+
+### Planning a bigger refresh for next year?
+
+If this Thanksgiving made you wish the kitchen looked better, now is a good time to plan. Cabinet work takes some lead time, so starting early helps. Our [cabinet refinishing](/services/cabinet-refinishing) team can walk you through it, and our post on [cabinet refinishing cost in Kirkland](/cabinet-refinishing-cost-kirkland-wa) covers what to expect. If you want a new look but cannot choose colors, try a [color consultation](/services/color-consultation).
+
+Interior painting also works well in our wet winters, since the work happens inside. Learn more in our guide to [winter interior painting](/winter-interior-painting-lake-forest-park-wa). And if you are hosting again in December, our [holiday interior painting guide](/holiday-interior-painting-woodinville-wa) has a prep timeline.
+
+## Why Kirkland Homeowners Choose Arclight
+
+Arclight Painting is a veteran-owned company headquartered in Bothell. We serve [Kirkland](/kirkland), Woodinville, Kenmore, Mill Creek, Redmond, Bellevue and nearby Eastside and north Seattle communities. We are licensed, bonded and insured.
+
+Every project starts with a TrueQuote™ fixed-price proposal, so you know the price before work begins. When we finish, our PCA™ Quality Inspection checks the details. Your project is backed by our 100% Satisfaction Guarantee and our 5-Year FreshStart™ Touch-Up Plan, which helps keep your walls looking fresh long after the job is done.
+
+Ready to erase the holiday wear and tear? [Schedule a visit](/schedule) and we will help you decide between a quick touch-up and a full repaint.
+
+## External Resources
+
+The cleaning and touch-up steps in this post come from major paint manufacturers' published guides on cleaning painted walls and touching up paint. Sheen advice comes from a manufacturer's guide to choosing a paint finish. Lead safety guidance comes from the U.S. Environmental Protection Agency's Renovation, Repair and Painting (RRP) Program page for consumers.
+
+## FAQ: Post-Thanksgiving Wall Touch-Ups in Kirkland
+
+### What is the safest way to remove scuff marks from painted walls?
+
+Start with mild soap, warm water and a soft cloth. If that does not work, manufacturer care guides suggest a baking soda and water paste, rubbed on gently. Test on a hidden spot first and avoid abrasive scrubbers.
+
+### How do I get grease off kitchen walls after Thanksgiving cooking?
+
+Mix a grease-cutting dish soap with warm water, wipe gently, then rinse with a lightly damp cloth. If the grease keeps coming back, repainting in a more washable sheen like satin may be the better long-term fix.
+
+### Why does my touch-up paint look shinier than the rest of the wall?
+
+That is called flashing. It happens when the sheen, the tool or the amount of paint does not match the original. Use the same sheen and applicator, apply thin coats, and feather the edges. If it still shows, repaint the wall corner to corner.
+
+### Can I touch up walls if I do not have the original paint?
+
+Yes. A paint store can color-match a small chip from the wall. You will still need to match the sheen. If the old paint has faded, the new paint may not blend well, and repainting the whole wall is often easier.
+
+### Is it okay to paint inside during a Kirkland winter?
+
+Yes. Interior painting happens inside your heated home, so rain does not stop it. Check the paint can for dry times, and keep the room ventilated while the paint dries.
+
+### Should I worry about lead paint when patching walls?
+
+If your home was built before 1978, it may have lead-based paint. The EPA warns that sanding and cutting can release lead dust. Avoid dry-sanding old paint, and the EPA recommends hiring a lead-safe certified contractor for this kind of work.
+
+Holiday guests leave memories, and sometimes a few marks on the walls. Clean what you can, patch what you need, and let us handle the rest. When you are ready, [schedule your TrueQuote™](/schedule) and we will get your Kirkland home looking fresh before the next round of holiday visitors.
+`,
+  },
+  {
     slug: "rotted-siding-before-painting-bellevue-wa",
     title: "Rotted Siding Before Painting in Bellevue: Perdue Builders",
     seoTitle: "Rotted Siding Before Painting in Bellevue, WA | Arclight",
