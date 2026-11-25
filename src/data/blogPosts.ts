@@ -12,6 +12,80 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "christmas-in-bothell-family-and-community",
+    title: "Christmas in Bothell: Leaning on Family and Community This Year",
+    seoTitle: "Christmas in Bothell: Family and Community | Arclight Painting",
+    excerpt: "A personal Bothell Christmas: checking on neighbors, an open door, kids who give, a thank-you list, and why no one should carry the season alone.",
+    image: "/images/blog/christmas-in-bothell-family-and-community.webp",
+    date: "2026-11-25",
+    content: `Christmas has a way of showing you who your people are.
+
+Some years, that feels easy. The house is full, the lights work on the first try, and everyone is healthy. Other years, it is harder. Someone is missing from the table. Money is tight. A storm knocks the power out the week before.
+
+![A cozy Pacific Northwest living room on a rainy December evening, with a decorated Christmas tree, warm string lights, a few wrapped gifts and wet evergreens outside the window](/images/blog/christmas-in-bothell-family-and-community.webp)
+
+This fall, we tried [doing Thanksgiving a little differently](/thanksgiving-in-bothell-doing-it-differently). We paid more attention. We set an extra place at the table. It went so well that we wanted to carry it into December. So this Christmas, we are leaning into one simple idea: nobody should have to carry the season alone.
+
+Here is what that looks like for us.
+
+## Checking on the Neighbors First
+
+The late fall storms reminded us how much we need the people on our street.
+
+When the wind picks up and the power flickers, the first thing we do now is check the group text. Does anyone need a flashlight? A charged phone? A warm place to sit for a few hours?
+
+This December, we are going a step further. Before the holidays get busy, we are knocking on a few doors. The older couple at the end of the block. The new family who moved in this summer. The neighbor who lives alone and always waves from the porch.
+
+It does not need to be a big visit. A plate of cookies, our phone number on a card, and a simple "if you need anything this winter, call us." That is it.
+
+## An Open Door, Not Just an Open Seat
+
+At Thanksgiving, we filled one extra chair on purpose. For Christmas, we are keeping the door open a little wider.
+
+Not everyone can fly home for the holidays. Some people are new to the area. Some are going through a loss. Some just do not want to spend December 25 alone, and would never say so.
+
+So this year, Christmas Day at our house is a come-and-go afternoon. Cocoa on the stove. Something warm in the oven. No dress code. No gift needed. Stay for ten minutes or stay for three hours.
+
+We have learned that [the family we choose](/the-family-we-choose) matters just as much as the family we are born into. Christmas is a good time to make room for both.
+
+## The Kids Give, Too
+
+Last month, each of our kids owned a dish at Thanksgiving. This month, each of them owns a gift, and it is not for someone in our house.
+
+They pick someone in the community who could use a little extra this year. They help plan it, shop for it, wrap it and deliver it. It might be a warm hat for a neighbor, a drawing for a friend who has been sick, or food for a local food drive.
+
+It is a small thing. But we want them to learn early that Christmas is not just about what shows up under the tree. It is about who you show up for.
+
+## Saying Thank You to the People Who Hold Us Up
+
+Every community has people who quietly keep it running. The mail carrier who walks our street in the rain. The teachers who stayed late all fall. The nurses and first responders who will work on Christmas Day. The crossing guard. The grocery clerk who remembers your name.
+
+This year, we are making a short list and writing real thank-you notes. Not just a card with a signature. A few honest lines about what they did and why it mattered.
+
+It takes ten minutes. And for someone working through the holidays, it can make the whole week feel lighter.
+
+## Asking for Help Is Part of It
+
+This is the hard one.
+
+Being a good neighbor is not only about giving help. It is also about being willing to take it. If this has been a tough year for you, it is okay to say so. Let someone bring you dinner. Say yes when a friend offers to watch the kids. Tell your people what you need.
+
+Community only works when it goes both ways. Some years you are the one carrying the casserole. Some years you are the one who needs it. Both are part of belonging somewhere.
+
+## The Same Season, Held Together
+
+None of this is complicated. A knock on a door. A pot of cocoa. A kid with a wrapped gift. A thank-you note. A text that says "I could use some help."
+
+Christmas this year falls on a Friday. The lights will still tangle. The cookies will still burn on one side. Someone will still open the gift meant for someone else.
+
+But we hope this year we spend a little less time getting everything perfect, and a little more time making sure everyone around us is okay.
+
+We are grateful for this community. For the neighbors who check in during the storms. For the families who let us into their homes all year. And for a town where people still look out for each other when the nights are long.
+
+From our family to yours, merry Christmas.
+`,
+  },
+  {
     slug: "winter-storm-paint-damage-redmond-wa",
     title: "Before Christmas in Redmond: Check Your Paint for Storm Damage",
     seoTitle: "Pre-Christmas Storm Damage Check for Paint in Redmond, WA",
