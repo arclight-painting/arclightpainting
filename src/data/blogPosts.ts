@@ -12,6 +12,188 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "winter-storm-paint-damage-redmond-wa",
+    title: "Before Christmas in Redmond: Check Your Paint for Storm Damage",
+    seoTitle: "Pre-Christmas Storm Damage Check for Paint in Redmond, WA",
+    excerpt: "Before Christmas guests arrive, check your Redmond home for storm damage to paint, siding and trim. Learn what to fix before the holidays and what can wait.",
+    image: "/images/blog/winter-storm-paint-damage-redmond-wa.webp",
+    date: "2026-11-25",
+    content: `Christmas lights are going up across Redmond, and guests will be at the door in a few weeks. But this year's November storms may have left a few surprises on your house. Before you hang the first strand of lights, take a walk around your home on a dry day and look for four things: peeling or bubbling paint, cracked caulk, soft wood, and water stains on inside walls or ceilings. Fix anything that lets water in before Christmas. Most of the rest can wait for a spring repaint.
+
+![Pacific Northwest home with painted lap siding and white trim on a gray, wet early-winter day, with puddles on the walkway and bare trees after a storm](/images/blog/winter-storm-paint-damage-redmond-wa.webp)
+
+This guide shows you what to check, what to handle before the holidays, and when it makes sense to call our [exterior painting](/services/exterior-painting) team.
+
+## Why This Year's Storms Matter for Your Christmas Plans
+
+November is the start of the wettest stretch of the year in the Pacific Northwest. In mid-November 2026, NPR reported that back-to-back atmospheric rivers were dropping heavy rain on Washington and Oregon, with more storms on the way.
+
+### What is an atmospheric river?
+
+NOAA describes atmospheric rivers as long, narrow bands in the sky that carry huge amounts of water vapor. When they reach land, they release that water as rain or snow. The strongest ones bring extreme rainfall, flooding and strong winds. A well-known type is the "Pineapple Express," which carries moisture from the tropics near Hawaii to the West Coast.
+
+### What that means for your house
+
+Paint is your home's raincoat. It keeps water out of the siding, trim and the wood underneath. A strong storm tests that raincoat in a few ways:
+
+- **Wind-driven rain** gets pushed sideways into gaps that normal rain never reaches.
+- **Overflowing gutters** pour water down the siding instead of away from it.
+- **Falling branches** scrape paint and crack trim.
+- **Days of rain in a row** never let the siding dry out between storms.
+
+One storm rarely ruins good paint. But it can find every weak spot that was already there. And a small leak you ignore in early December can turn into a stained ceiling in the guest room by Christmas Eve.
+
+## Step 1: Walk the Outside Before You Decorate
+
+Pick a dry, calm day before the lights and wreaths go up. It is much easier to see problems on bare siding and trim. You can spot most issues from the ground. Bring your phone so you can take photos as you go.
+
+### What to look for
+
+| Where | What you might see | What it can mean |
+|---|---|---|
+| **Siding near the ground** | Peeling, flaking or dark stains | Splash-back from rain is soaking the lowest boards |
+| **Under gutters** | Streaks, peeling or stains running down the wall | Gutters overflowed or are leaking |
+| **Window and door trim** | Cracked caulk, gaps, peeling corners | Water can get behind the trim |
+| **Front door and porch** | Peeling paint, swollen wood, worn finish | The first thing your Christmas guests will see |
+| **Fascia and eaves** | Peeling, sagging or soft spots | Water is reaching the roof edge boards, right where many people hang lights |
+| **Anywhere a branch hit** | Scrapes, dents, bare wood | Unpainted wood is now open to rain |
+
+### The soft-wood test
+
+If a spot looks bad, press it gently with your thumb or a screwdriver tip. Healthy wood feels hard. Wood that feels soft or spongy may be rotting. Rot is a repair job, not just a paint job, so do not hang lights or decorations from it. Our guide on [fixing rotted siding before painting](/rotted-siding-before-painting-bellevue-wa) explains what that repair looks like.
+
+### Check the gutters, too
+
+Overflowing gutters are one of the most common causes of peeling paint. The EPA lists cleaning and repairing roof gutters regularly as a basic step in controlling moisture. If you saw water spilling over the sides during the storm, read our post on [clogged gutters and peeling paint](/clogged-gutters-peeling-paint-kenmore-wa).
+
+## Step 2: Hang Christmas Lights Without Hurting Your Paint
+
+Once you know your trim and siding are sound, it is time to decorate. The U.S. Consumer Product Safety Commission (CPSC) has a few tips that also help protect your home's exterior:
+
+- **Use insulated staples, not nails or tacks,** to hold light strings in place. Fasten lights securely to the house or other firm supports so wind does not damage them.
+- **Check the label.** Use only lights certified for outdoor use, and plug them into a GFCI-protected outlet (the kind with test and reset buttons that cut power to prevent shocks).
+- **Inspect every set.** Throw out lights with cracked sockets, frayed or bare wires, or loose connections.
+- **Take them down gently.** The CPSC warns never to pull or tug on lights when removing them, because it stresses the connections and can create a fire hazard.
+
+### Be careful on ladders
+
+The CPSC reports that falls were the most common holiday decorating injury, at 38% of emergency room visits it counted from November 2016 through January 2017. If the eaves are high or the roof edge is soft or damaged, skip the ladder and keep the lights low this year.
+
+## Step 3: Check Inside Before Guests Arrive
+
+Storm damage does not always show up outside first. Sometimes the first sign is inside, often in a room you only use when family visits.
+
+- **Guest rooms and upstairs ceilings:** Look for yellow or brown rings, especially near outside walls.
+- **Walls under windows:** Look for bubbling paint, stains or a damp feel.
+- **Room corners:** Look for dark spots or a musty smell.
+- **Attic, if you can safely look in:** Look for wet insulation or drips.
+
+### Act fast on anything wet
+
+The EPA says it is important to dry water-damaged areas and items within 24 to 48 hours to prevent mold growth. It also says that if you clean up mold but do not fix the water problem, the mold will most likely come back. So find the leak first, then dry everything out.
+
+### Do not just paint over it for the holidays
+
+It is tempting to cover a ceiling stain with a quick coat of paint before guests arrive. The EPA advises against painting or caulking moldy surfaces and warns that paint applied over moldy surfaces is likely to peel. Fix the leak, dry the area, and clean any mold first. Painting comes last.
+
+For water-stained ceilings, see our guide on [ceiling painting and stain repair](/ceiling-painting-everett-wa). If the drywall is soft or crumbling, it needs a [drywall repair](/services/drywall-repairs) before any paint goes on.
+
+## Step 4: Get the Small Fixes Done Before Christmas
+
+Once leaks are fixed and everything is dry, the inside touch-ups are perfect pre-holiday work. Interior painting happens in your heated home, so December rain does not stop it.
+
+Our [Painter for a Day](/services/painter-for-a-day) service is made for a pre-Christmas list like this:
+
+- **A guest room ceiling** with a dried, repaired water stain
+- **The wall under a window** where paint bubbled
+- **Entry and hallway walls** before guests and luggage arrive
+- **The inside of the front door and trim**, the first thing visitors touch
+
+For bigger rooms, our [interior painting](/services/interior-painting) team can help. Our [holiday interior painting guide](/holiday-interior-painting-woodinville-wa) has a timeline for getting rooms done before guests arrive. Holiday calendars fill up fast, so the earlier you call, the better.
+
+## Step 5: Decide What Can Wait Until After the Holidays
+
+Not every storm mark needs a painter before Christmas. Here is a simple way to sort it out:
+
+| Problem | Before Christmas | Plan for spring |
+|---|---|---|
+| Water coming inside | Yes: find and stop the leak | |
+| Soft or rotting wood | Yes: get it inspected, and do not hang lights on it | Repair and repaint |
+| Bare wood from a branch scrape | Yes: cover or seal it to keep water out | Full repaint of the area |
+| Stains and bubbles inside (after the leak is fixed) | Yes: a good Painter for a Day job | |
+| A few small peeling spots outside | | Yes |
+| Dirt and green streaks on siding | | Yes: wash before painting |
+| Faded or chalky paint | | Yes |
+
+### Why the outside repaint usually waits
+
+Exterior paint needs dry surfaces and the right temperature to stick and cure (fully harden). Every paint can lists its own minimum temperature, and wet Redmond winters rarely give you a long dry stretch. That is why most full exterior jobs here are planned for late spring and summer. Our post on [exterior painting in fall and winter](/exterior-painting-fall-winter-bothell-wa) explains what can and cannot be done in cold, wet months.
+
+The quiet weeks after New Year are a great time to plan. Get your quote, pick colors, and get on the calendar before spring fills up. When the weather turns, a good [pressure washing](/services/pressure-washing) is usually the first step.
+
+### Older homes need extra care
+
+Some Redmond homes were built before 1978. The EPA says about three-quarters of U.S. homes built before 1978 still contain some lead-based paint. Scraping or sanding that old paint can create harmful lead dust. If your home is that old, do not dry-scrape or sand storm-damaged paint yourself. The EPA recommends that homeowners hire a lead-safe certified contractor for this kind of work.
+
+## Step 6: Photos, Insurance and Holiday Storm Chasers
+
+If the storm caused real damage, like a tree on the house or a roof leak, take photos before you clean anything up.
+
+The Washington State Office of the Insurance Commissioner says homeowner insurance usually covers damage from wind, wind-driven rain, falling trees, and snow and ice. Flood water is different: you need flood insurance for that. The office suggests you:
+
+1. **Limit further damage if it is safe,** for example by covering broken windows or a leaking roof.
+2. **Wait on permanent repairs** until your insurer has seen the damage and you have agreed on repairs.
+3. **Keep receipts** for emergency supplies like tarps or plywood, since they may be paid back.
+4. **Keep copies of everything,** including photos and notes from calls.
+
+The office also says your insurer should inspect the damage within 30 days of the date you file your claim, and that you have the right to choose your own contractor.
+
+### Watch out for "fix it before Christmas" pressure
+
+After a big storm, and especially around the holidays, some people go door to door promising fast, cheap repairs. The Insurance Commissioner's office warns that scammers often target homeowners after a disaster. Its red flags include pressure to sign quickly, refusing to show credentials, cash-only requests and big discounts for signing today. Always check a contractor's license, bond and insurance on the Washington Department of Labor & Industries website. Our guide on [how to check a painting contractor's license, bond and insurance](/check-painting-contractor-license-insurance-kenmore-wa) walks you through it.
+
+## Why Redmond Homeowners Choose Arclight
+
+Arclight Painting is a veteran-owned company headquartered in Bothell. We serve [Redmond](/redmond), Woodinville, Kenmore, Kirkland, Mill Creek, Bellevue and nearby Eastside and north Seattle communities. We are licensed, bonded and insured.
+
+Every project starts with a TrueQuote™ fixed-price proposal, so you know the price before work begins. When we finish, our PCA™ Quality Inspection checks the details. Your project is backed by our 100% Satisfaction Guarantee and our 5-Year FreshStart™ Touch-Up Plan.
+
+Curious what a spring repaint might cost? Our [Redmond exterior painting cost guide](/exterior-painting-cost-redmond-wa) has realistic ranges. Or [schedule a visit](/schedule) and we will help you sort out what needs attention before Christmas and what can wait.
+
+## External Resources
+
+The facts in this post come from public sources you can read yourself. The description of atmospheric rivers comes from NOAA's explainer, What Are Atmospheric Rivers? The mid-November 2026 storm report comes from NPR's November 13, 2026 article on atmospheric rivers in the Pacific Northwest. Holiday lighting tips and the decorating injury figures come from U.S. Consumer Product Safety Commission holiday decorating safety releases. The 24-to-48-hour drying rule, the gutter tip and the advice not to paint over mold come from the U.S. Environmental Protection Agency's mold guidance. Lead paint figures and recommendations come from the EPA's Lead Renovation, Repair and Painting Program page. Insurance coverage, claim steps and scam warnings come from the Washington State Office of the Insurance Commissioner's pages on winter weather coverage, steps after home damage, and fraud after property damage.
+
+## FAQ: Storm Damage and Christmas Prep in Redmond
+
+### How do I know if a storm damaged my exterior paint?
+
+Look for new peeling, bubbling or cracking, especially near the ground, under gutters and around windows and doors. Also check for cracked caulk, bare wood where branches hit, and soft spots in the trim. Then check inside for water stains on ceilings and walls.
+
+### Can I hang Christmas lights on damaged trim?
+
+It is best not to. Soft or rotting wood will not hold fasteners well and needs repair first. On sound trim, the CPSC recommends insulated staples instead of nails or tacks, and lights certified for outdoor use.
+
+### Can I paint my house exterior before Christmas in Redmond?
+
+Usually not a full repaint. Paint needs dry surfaces and the right temperature to stick and cure, and every can lists a minimum temperature. Small emergency fixes to protect bare wood are possible on a dry day. Most full exterior jobs are best planned for late spring or summer.
+
+### Should I paint over a ceiling stain before guests arrive?
+
+Not until the leak is fixed and the area is completely dry. The EPA warns that paint over moldy surfaces is likely to peel. Fix the source, dry it out, clean any mold, then use a stain-blocking primer before painting.
+
+### Does homeowner insurance cover storm damage to my siding?
+
+Often, yes. The Washington State Office of the Insurance Commissioner says homeowner insurance usually covers damage from wind, wind-driven rain, falling trees, and snow and ice. Flood water needs separate flood insurance. Check your own policy and talk to your agent.
+
+### Can a painter still help before the holidays?
+
+Yes, for inside work. Interior touch-ups, ceiling stain repairs and small rooms are good pre-Christmas jobs, and a Painter for a Day visit can cover a whole list. Book early, because December schedules fill up.
+
+The best Christmas gift for your home is a dry, solid shell. Take a walk around, deal with anything that lets water in, get the inside touch-ups done before guests arrive, and plan the rest for spring. When you are ready, [schedule your TrueQuote™](/schedule) and we will help you get your Redmond home ready for the holidays and the next storm.
+`,
+  },
+  {
     slug: "post-thanksgiving-wall-touch-ups-kirkland-wa",
     title: "After Thanksgiving in Kirkland: How Do You Fix Scuffs, Stains and Dings on Your Walls?",
     seoTitle: "Post-Thanksgiving Wall Touch-Ups in Kirkland, WA",
