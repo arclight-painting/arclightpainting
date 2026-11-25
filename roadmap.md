@@ -1,4 +1,5 @@
 # Tasks
+- [x] Add Uisce Plumbing using its official logo and services; verify the directory without publishing.
 - [x] Remove the five partners listed under Painting; retain PNW Drywall under Drywall and verify 14 remaining directory entries without publishing.
 - [x] Move Trade Alliance trust badges above Service Areas, remove the closing tagline section, and replace the opening tagline with Good People know Good People (final words highlighted).
 - [x] Remove the Trade Alliance alphabet selector and update the We Connect You introduction sentence.

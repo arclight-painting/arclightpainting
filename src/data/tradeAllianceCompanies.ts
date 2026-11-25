@@ -12,6 +12,7 @@ import westCoastLogo from "@/assets/trade-alliance/west-coast-wallcovering.png.a
 import benjaminsLogo from "@/assets/trade-alliance/benjamins-drywall.png.asset.json";
 import heroLogo from "@/assets/trade-alliance/hero-plumbing.svg.asset.json";
 import asbestosLogo from "@/assets/trade-alliance/asbestos-removal-puget-sound.webp.asset.json";
+import uisceLogo from "@/assets/trade-alliance/uisce-plumbing.jpg.asset.json";
 
 export interface AllianceCompany {
   id: string;
@@ -44,6 +45,7 @@ const companies: AllianceCompany[] = [
   { id: "asbestos-removal-puget-sound", name: "Asbestos Removal of Puget Sound", trade: "Asbestos Abatement", location: "Everett", website: "https://asbestosremovalofpugetsound.com/", logo: asbestosLogo.url, description: "A licensed, AHERA-certified asbestos testing and removal company that also tests for lead. Uses full containment and HEPA disposal across Snohomish, King and Pierce Counties." },
   { id: "benjamins-drywall", name: "Benjamins Drywall Inc", trade: "Drywall", location: "Snohomish", website: "https://www.facebook.com/interiorconstruction99/", logo: benjaminsLogo.url, description: "An established drywall contractor based in Snohomish, WA." },
   { id: "hero-plumbing", name: "Hero Plumbing LLC", trade: "Plumbing", location: "Lynnwood", website: "", logo: heroLogo.url, description: "A licensed plumbing contractor serving Lynnwood and the Snohomish County area." },
+  { id: "uisce-plumbing", name: "Uisce Plumbing", trade: "Plumbing", website: "https://www.uisceplumbing.com/", logo: uisceLogo.url, description: "Uisce Plumbing provides residential plumbing service, remodels, and new construction. Services include water heater and faucet replacements, leak searches, and pipe repair." },
 ];
 
 // Cloudflare Pages does not serve Lovable's relative asset endpoint.

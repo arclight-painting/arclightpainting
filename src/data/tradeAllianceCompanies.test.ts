@@ -4,15 +4,15 @@ import { allianceCompanies, companyLinkLabel, directoryLetters, firstCompanyForL
 describe("Trade Alliance directory", () => {
   it("loads each existing logo from the published asset host rather than the Cloudflare page origin", () => {
     const logos = allianceCompanies.filter(company => company.logo);
-    expect(logos).toHaveLength(14);
+    expect(logos).toHaveLength(15);
     for (const company of logos) {
       const url = new URL(company.logo ?? "");
       expect(url.origin).toBe("https://arclightpainting.lovable.app");
       expect(url.pathname.startsWith("/__l5e/assets-v1/")).toBe(true);
     }
   });
-  it("lists 15 current companies", () => {
-    expect(allianceCompanies).toHaveLength(15);
+  it("lists 16 current companies", () => {
+    expect(allianceCompanies).toHaveLength(16);
   });
   it.each(["riverside-roofing", "ak-electric"])("excludes former partner %s", id => {
     expect(allianceCompanies.some(company => company.id === id)).toBe(false);
@@ -28,7 +28,7 @@ describe("Trade Alliance directory", () => {
     expect(allianceCompanies.find(company => company.id === "sound-gutters")?.trade).toBe("Roofing & Gutters");
   });
   it("sorts companies alphabetically", () => {
-    expect(allianceCompanies.map(company => company.name)).toEqual(["Asbestos Removal of Puget Sound", "Benjamins Drywall Inc", "Do It Right Roofing", "HB Power Electric", "Hello Electric", "Hero Plumbing LLC", "Perdue Builders", "PNW Drywall Finishing & Painting", "Rock Roofing", "Sound Gutters & Roofing Co", "Squatch Roofing", "Studebaker Installs LLC", "Three Tree Roofing", "West Coast Wallcovering", "Zee Construction"]);
+    expect(allianceCompanies.map(company => company.name)).toEqual(["Asbestos Removal of Puget Sound", "Benjamins Drywall Inc", "Do It Right Roofing", "HB Power Electric", "Hello Electric", "Hero Plumbing LLC", "Perdue Builders", "PNW Drywall Finishing & Painting", "Rock Roofing", "Sound Gutters & Roofing Co", "Squatch Roofing", "Studebaker Installs LLC", "Three Tree Roofing", "Uisce Plumbing", "West Coast Wallcovering", "Zee Construction"]);
   });
   it("provides all 26 letters and selects the first matching company", () => {
     expect(directoryLetters.join("")).toBe("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
@@ -48,8 +48,16 @@ describe("Trade Alliance directory", () => {
     expect(hasCompleteCompanyData({ id: "x", name: "X", trade: "Plumbing", logo: "/l.svg", description: "Plumbing", website: "" })).toBe(true);
     expect(visibleAllianceCompanies.find(company => company.id === "hero-plumbing")?.website).toBe("");
   });
-  it("shows all 15 companies", () => {
-    expect(visibleAllianceCompanies).toHaveLength(15);
+  it("includes Uisce Plumbing with its official website and logo", () => {
+    const company = visibleAllianceCompanies.find(company => company.id === "uisce-plumbing");
+    expect(company?.name).toBe("Uisce Plumbing");
+    expect(company?.trade).toBe("Plumbing");
+    expect(company?.website).toBe("https://www.uisceplumbing.com/");
+    expect(company?.logo).toContain("/uisce-plumbing.jpg");
+    expect(company?.description).toContain("water heater and faucet replacements");
+  });
+  it("shows all 16 companies", () => {
+    expect(visibleAllianceCompanies).toHaveLength(16);
     expect(allianceCompanies.filter(company => !hasCompleteCompanyData(company))).toEqual([]);
   });
 });
