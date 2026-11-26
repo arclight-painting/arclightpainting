@@ -12,6 +12,62 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "mint-chocolate-truffles-christmas-recipe",
+    title: "How to Make No-Bake Mint Chocolate Truffles for Christmas",
+    seoTitle: "Easy No-Bake Mint Chocolate Truffles | Arclight Painting",
+    excerpt: "No-bake mint chocolate truffles need just three ingredients. Get the ingredient list, easy steps and gifting ideas from the Arclight Painting team.",
+    image: "/images/blog/mint-chocolate-truffles-christmas-recipe.webp",
+    date: "2026-11-26",
+    content: `Looking for a simple treat to bring to a neighbor's door this Christmas? These mint chocolate truffles need only three ingredients and no oven. They're a fun project for kids on a rainy December afternoon, and they look like they came from a candy shop.
+
+![Chocolate-dipped mint truffles with green drizzle](/images/blog/mint-chocolate-truffles-christmas-recipe.webp)
+
+Here's how to make them at home.
+
+## At a Glance
+
+| | |
+|---|---|
+| **Makes** | 30 to 35 truffles |
+| **Oven needed** | No |
+| **Total time** | About 1 hour (mostly chilling) |
+| **Keeps** | Up to 5 days in the fridge |
+
+## Ingredients
+
+- 1 package (15.25 oz) Mint Creme Oreos
+- 8 oz cream cheese, softened
+- 12 oz semi-sweet baking chocolate (bars melt more smoothly than chips)
+- Sprinkles or green candy melts, for decorating (optional)
+
+## How to Make Them
+
+1. **Crush.** Put the whole cookies, filling and all, in a food processor and pulse into fine crumbs. No food processor? A zip-top bag and a rolling pin work too.
+2. **Mix.** Beat the crumbs and cream cheese together until you have a thick, sticky dough.
+3. **Roll and freeze.** Roll the dough into 1-inch balls, set them on a lined tray, and freeze for about 30 minutes until firm.
+4. **Dip.** Melt the chocolate. Dip each ball, lift it out with a fork and let the extra drip off.
+5. **Decorate.** Add sprinkles before the chocolate sets, or drizzle melted green candy melts over the top.
+6. **Chill.** Refrigerate for at least 10 minutes until set.
+
+## Tips for the Holidays
+
+- **Make them ahead.** They keep in the fridge for up to 5 days, or in the freezer for 2 to 3 months. Thaw frozen truffles in the fridge.
+- **Let the kids help.** Crushing cookies and adding sprinkles are perfect jobs for little hands.
+- **Keep them cool.** Take them out of the fridge just before serving so the chocolate stays firm.
+
+## Share the Cheer
+
+Put a few truffles in a small box or jar, add a handwritten card, and leave them for a neighbor, your mail carrier, or a friend who has had a tough year. It's a small way to make sure nobody carries the season alone.
+
+## Merry Christmas from Arclight
+
+From all of us at Arclight Painting, thank you for being part of our community. We hope your December is full of good food, warm homes and great company.
+
+*Recipe adapted from [Sally's Baking Addiction](https://sallysbakingaddiction.com/2014/03/05/mint-oreo-truffles/), found through [PureWow](https://www.purewow.com/food/5-ingredient-holiday-cookie-recipes).*
+
+`,
+  },
+  {
     slug: "christmas-in-bothell-family-and-community",
     title: "Christmas in Bothell: Leaning on Family and Community This Year",
     seoTitle: "Christmas in Bothell: Family and Community | Arclight Painting",
